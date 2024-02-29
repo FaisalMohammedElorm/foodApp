@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableOpacity} from 'react-native'
 import React from 'react'
 
 const App = () => {
@@ -16,6 +16,23 @@ const App = () => {
 </View>
 
     {/* Sign In And Sign Up Section */}
+    
+<View>
+  {/* Sign In Button */}
+  <TouchableOpacity style={{
+    backgroundColor: "#0DCDAA", 
+    padding: 10, 
+    
+    alignItems: "center",
+    borderRadius: 10,
+    width: 250,
+    marginTop: 100
+    }}>
+    <Text style ={{color:"white", fontWeight: "bold"}}>Sign In</Text>
+  </TouchableOpacity>
+
+
+</View>
   </View>
 }
 
