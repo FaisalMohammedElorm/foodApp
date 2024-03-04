@@ -1,40 +1,26 @@
-import { View, Text, Image, TouchableOpacity} from 'react-native'
+import { View, Text,Image, SafeAreaView } from 'react-native'
 import React from 'react'
+import { AntDesign } from '@expo/vector-icons';
+
+
+//todo: Understand flex direction, safe AreaView, TextInput
 
 const App = () => {
-  return <View style={{
-    flex: 1,
-  alignItems: "center", }}>
-    {/* Welcome And Image Section */}
-<View style={{marginTop: 150, alignItems: "center"}}>
-  <Text style={{fontSize: 35, fontWeight: "bold"}}>Welcome!</Text>
-  <Text style={{color: "#7C7C7C" }}>Sign in or create a new account</Text>
-<Image
-  source={require("./assets/Frame.png")}
-/>
-
-</View>
-
-    {/* Sign In And Sign Up Section */}
+  return (
+    <SafeAreaView style={{flex:1 }}>
+      {/*Header section*/}
     
 <View>
-  {/* Sign In Button */}
-  <TouchableOpacity style={{
-    backgroundColor: "#0DCDAA", 
-    padding: 10, 
-    
-    alignItems: "center",
-    borderRadius: 10,
-    width: 250,
-    marginTop: 100
-    }}>
-    <Text style ={{color:"white", fontWeight: "bold"}}>Sign In</Text>
-  </TouchableOpacity>
-
-
+<AntDesign name="leftcircleo" size={24} color="black" />
 </View>
-  </View>
+     
+      {/*Form section*/}
+
+
+
+      {/*Button section*/}
+    </SafeAreaView>
+  )
 }
 
 export default App
-
