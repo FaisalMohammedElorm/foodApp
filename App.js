@@ -1,30 +1,40 @@
-import { View, Text , Image} from 'react-native'
+import { View, Text, Image, TouchableOpacity} from 'react-native'
 import React from 'react'
 
 const App = () => {
-  return (
-    <View>
-    <View style={{marginTop:300, marginLeft:100, }}>
-      {/*Image section starts here*/}
-      <Image
-  source={require("./assets/Map.png")}
+  return <View style={{
+    flex: 1,
+  alignItems: "center", }}>
+    {/* Welcome And Image Section */}
+<View style={{marginTop: 150, alignItems: "center"}}>
+  <Text style={{fontSize: 35, fontWeight: "bold"}}>Welcome!</Text>
+  <Text style={{color: "#7C7C7C" }}>Sign in or create a new account</Text>
+<Image
+  source={require("./assets/Frame.png")}
 />
 
-    {/*Image section ends here*/}
-    </View>
-    <View style={{marginLeft: 110, marginTop: 25}}>
-      {/**Text Area Starts Here */}
-<Text style={{fontSize: 30, fontWeight:"bold", alignItems:"center"}}>Select Location</Text>
-      {/**Text Area Ends Here */}
-    </View>
-    {/**Another Text Area Starts Here */}
+</View>
+
+    {/* Sign In And Sign Up Section */}
     
-      <View style={{marginLeft:30, marginRight:30, alignItems:"center"}}>
-<Text style={{color:"#7C7C7C", fontWeight:"bold", fontSize:18}}>Let's find your next event. Stay in tune with what's happening in your area! </Text>
-      </View>
-      {/**Another Text Area Ends Here */}
-    </View>
-  )
+<View>
+  {/* Sign In Button */}
+  <TouchableOpacity style={{
+    backgroundColor: "#0DCDAA", 
+    padding: 10, 
+    
+    alignItems: "center",
+    borderRadius: 10,
+    width: 250,
+    marginTop: 100
+    }}>
+    <Text style ={{color:"white", fontWeight: "bold"}}>Sign In</Text>
+  </TouchableOpacity>
+
+
+</View>
+  </View>
 }
 
 export default App
+
